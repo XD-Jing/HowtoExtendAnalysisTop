@@ -66,16 +66,17 @@ namespace top {
       objectSelection->tauSelection(new top::TauMC15());
     }
 
-    ///-- Jets --///
-    if (topConfig->useJets()) {
-      double ptMax(100000.);
-      objectSelection -> jetSelection(new top::CustomJet(topConfig->jetPtcut(), ptMax ,topConfig->jetEtacut(), topConfig->jetJVTcut())); 
-    }
-    
-    ///-- Large R Jets --///
-    if (topConfig->useLargeRJets()) {
-      objectSelection -> largeJetSelection(new top::JetMC15(topConfig->jetPtcut(), topConfig->jetEtacut())); 
-    }
+// jing: comment since topConfig has no jetEtacut()
+//    ///-- Jets --///
+//    if (topConfig->useJets()) {
+//      double ptMax(100000.);
+//      objectSelection -> jetSelection(new top::CustomJet(topConfig->jetPtcut(), ptMax ,topConfig->jetEtacut(), topConfig->jetJVTcut())); 
+//    }
+//    
+//    ///-- Large R Jets --///
+//    if (topConfig->useLargeRJets()) {
+//      objectSelection -> largeJetSelection(new top::JetMC15(topConfig->jetPtcut(), topConfig->jetEtacut())); 
+//    }
 
     ///-- Overlap removal --///
     objectSelection->overlapRemovalPostSelection(new top::OverlapRemovalASG());
