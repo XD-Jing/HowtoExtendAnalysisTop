@@ -1,0 +1,26 @@
+2017-01-17 Michele Faucci Giannelli <mfauccig@cern.ch>
+	*Updated to compile and run with thr latest changes of AT-2.4.24
+
+2016-10-28 Andrea Knue <aknue@cern.ch>
+	* Update CustomObjectLoader
+	* HowtoExtendAnalysisTop-00-00-05
+
+2015-10-28 Sergio Grancagnolo <sergio.grancagnolo@cern.ch>
+	* Include isPrimaryxAOD argument to match LLH electron MC 15 interface
+	* HowtoExtendAnalysisTop-00-00-04
+
+2015-07-21 John Morris <john.morris@cern.ch>
+	* Add files to repo so it actually works
+	* HowtoExtendAnalysisTop-00-00-03
+
+2015-07-21 John Morris <john.morris@cern.ch>
+	* Typo
+	* HowtoExtendAnalysisTop-00-00-02
+
+2015-07-21 John Morris <john.morris@cern.ch>
+	* Example of how to extend AnalysisTop
+	* Custom object selection
+	* Custom event selection
+	* Custom output
+	* HowtoExtendAnalysisTop-00-00-01
+

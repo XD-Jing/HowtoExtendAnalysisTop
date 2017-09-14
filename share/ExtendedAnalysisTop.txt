@@ -1,0 +1,46 @@
+LibraryNames libTopEventSelectionTools libTopEventReconstructionTools libHowtoExtendAnalysisTop
+
+PRWConfigFiles
+PRWLumiCalcFiles GoodRunsLists/data15_13TeV/20160720/physics_25ns_20.7.lumicalc.OflLumi-13TeV-005.root GoodRunsLists/data16_13TeV/20161101/physics_25ns_20.7.lumicalc.OflLumi-13TeV-005.root
+
+GRLFile data15_13TeV.periodAllYear_DetStatus-v63-pro18-01_DQDefects-00-01-02_PHYS_StandardGRL_All_Good.xml
+
+ElectronCollectionName Electrons
+MuonCollectionName Muons
+JetCollectionName AntiKt4EMTopoJets
+LargeJetCollectionName None
+LargeJetSubstructure None
+TauCollectionName None
+PhotonCollectionName None
+METCollectionName MET_Reference_AntiKt4EMTopo
+TruthCollectionName TruthParticles
+TruthJetCollectionName AntiKt4TruthJets
+
+ObjectSelectionName top::ObjectLoaderStandardCuts #top::CustomObjectLoader
+OutputFormat top::CustomEventSaver
+OutputEvents SelectedEvents
+OutputFilename output.root
+
+ElectronID TightLH
+ElectronIDLoose MediumLH
+ElectronIsolation Gradient
+ElectronIsolationLoose None
+
+OverlapRemovalLeptonDef Tight
+ApplyElectronInJetSubtraction False
+
+IsAFII False
+
+SELECTION customSelection
+INITIAL
+GRL
+GOODCALO
+EVEN
+PRIVTX
+RUN_NUMBER >= 297730
+MU_N 25000 >= 1
+JETCLEAN LooseBad
+JET_N 25000 >= 1
+JET_N 25000 >= 2
+SAVE
+
