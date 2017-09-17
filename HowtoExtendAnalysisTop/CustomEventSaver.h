@@ -49,6 +49,11 @@ namespace top{
       float m_dimu_phi;
       float m_dimu_energy;
 
+      std::vector<float> m_el_mass;
+      std::vector<float> m_el_pz;
+      std::vector<float> m_mu_mass;
+      std::vector<float> m_mu_pz;
+
       ///-- Tell RootCore to build a dictionary (we need this) --///
       ClassDef(top::CustomEventSaver, 0);
   };
