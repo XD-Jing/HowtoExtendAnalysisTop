@@ -1,4 +1,5 @@
-LibraryNames libTopEventSelectionTools libTopEventReconstructionTools
+#LibraryNames libTopEventSelectionTools libTopEventReconstructionTools
+LibraryNames libTopEventSelectionTools libTopEventReconstructionTools libHowtoExtendAnalysisTop
 
 ### Good Run List
 GRLDir  GoodRunsLists
@@ -30,7 +31,7 @@ TruthBlockInfo False
 PDFInfo True
 
 ObjectSelectionName top::ObjectLoaderStandardCuts
-OutputFormat top::EventSaverFlatNtuple
+OutputFormat top::CustomEventSaver  #top::EventSaverFlatNtuple
 OutputEvents SelectedEvents
 OutputFilename output.root
 PerfStats No
